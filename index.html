@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ateeb Rahman Portfolio</title>
+<meta name="description" content="Engineering portfolio of Mohammed Ateeb ur Rahman: mechanical design and structural engineer working across aerospace, motorsport and composites.">
+<meta name="author" content="Mohammed Ateeb ur Rahman">
+<meta name="theme-color" content="#1A1A2E">
+
+<!-- Link preview card, for when this URL is pasted into LinkedIn, email or a message.
+     Once the site has a real address, change the two URLs below from images/... to the
+     full address, e.g. https://your-domain.com/images/sa25_hero.jpg -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mohammed Ateeb ur Rahman — Engineering Portfolio">
+<meta property="og:description" content="Mechanical design and structural engineer. Supersonic airliner aileron design, bird strike simulation on fibre metal laminates, and composite design for Formula Student.">
+<meta property="og:image" content="images/sa25_hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mohammed Ateeb ur Rahman — Engineering Portfolio">
+<meta name="twitter:description" content="Mechanical design and structural engineer. Supersonic airliner aileron design, bird strike simulation on fibre metal laminates, and composite design for Formula Student.">
+<meta name="twitter:image" content="images/sa25_hero.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231A1A2E'/%3E%3Crect x='24' y='24' width='16' height='16' rx='2' transform='rotate(45 32 32)' fill='%23E94560'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #F4F5F9;
+    --surface: #FFFFFF;
+    --surface-2: #EBEEF5;
+    --ink: #1A1A2E;
+    --ink-2: #3A3F55;
+    --muted: #646B82;
+    --line: #D9DDE8;
+    --accent: #E94560;
+    --accent-ink: #C8324B;
+    --blue: #0F3460;
+    --blue-soft: #DCE6F6;
+    --navy: #1A1A2E;
+    --navy-2: #22243D;
+    --on-navy: #F3F4FA;
+    --on-navy-muted: #B4BACB;
+    --shadow: 0 18px 40px -22px rgba(26, 26, 46, .35);
+    --radius: 6px;
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    --nav-h: 60px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12141F; --surface: #1B1E2E; --surface-2: #23273A; --ink: #EDEFF6; --ink-2: #C9CEDD; --muted: #9AA2B8;
+      --line: #2E3348; --accent: #F0637A; --accent-ink: #F58599; --blue: #8FB3F0; --blue-soft: #1E2A44;
+      --navy: #0E1019; --navy-2: #171A29; --on-navy: #F3F4FA; --on-navy-muted: #AEB4C6;
+      --shadow: 0 18px 40px -22px rgba(0, 0, 0, .7); color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12141F; --surface: #1B1E2E; --surface-2: #23273A; --ink: #EDEFF6; --ink-2: #C9CEDD; --muted: #9AA2B8;
+    --line: #2E3348; --accent: #F0637A; --accent-ink: #F58599; --blue: #8FB3F0; --blue-soft: #1E2A44;
+    --navy: #0E1019; --navy-2: #171A29; --on-navy: #F3F4FA; --on-navy-muted: #AEB4C6;
+    --shadow: 0 18px 40px -22px rgba(0, 0, 0, .7); color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html.js { scroll-behavior: auto; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--body); font-size: 16px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  h1, h2, h3, h4 { font-family: var(--display); line-height: 1.05; margin: 0; text-wrap: balance; letter-spacing: .005em; }
+  p { margin: 0 0 1em; max-width: 76ch; }
+  p:last-child { margin-bottom: 0; }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: #fff; padding: 8px 12px; z-index: 100; }
+  .skip:focus { left: 8px; }
+
+  /* ---------- nav ---------- */
+  .nav {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
+    background: color-mix(in srgb, var(--navy) 92%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    color: var(--on-navy); border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .nav-inner { display: flex; align-items: center; gap: 20px; height: var(--nav-h); padding-inline: clamp(16px, 4vw, 40px); }
+  .brand { font-family: var(--display); font-weight: 700; font-size: 22px; letter-spacing: .02em; color: var(--on-navy); text-decoration: none; white-space: nowrap; display: flex; align-items: center; gap: 10px; }
+  .brand .mark { width: 10px; height: 10px; background: var(--accent); border-radius: 2px; transform: rotate(45deg); }
+  .nav-links { display: flex; gap: 4px; margin-left: auto; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a {
+    color: var(--on-navy-muted); text-decoration: none; font-family: var(--display); font-weight: 600; font-size: 17px; letter-spacing: .04em; text-transform: uppercase;
+    padding: 8px 12px; border-radius: 4px; white-space: nowrap; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s;
+  }
+  .nav-links a:hover { color: var(--on-navy); }
+  .nav-links a.active { color: var(--on-navy); border-bottom-color: var(--accent); }
+  .nav-cta { background: var(--accent); color: #fff !important; }
+  .nav-cta:hover { background: #d13a54; }
+  .progress { position: fixed; left: 0; top: calc(var(--nav-h) + env(safe-area-inset-top, 0px)); height: 3px; width: 0; background: var(--accent); z-index: 51; transition: width .1s linear; }
+
+  /* ---------- layout ---------- */
+  .wrap { width: min(1180px, 100%); margin-inline: auto; padding-inline: clamp(16px, 4vw, 40px); }
+  section { scroll-margin-top: calc(var(--nav-h) + 12px); }
+  .section { padding-block: clamp(56px, 8vw, 96px); }
+  .section + .section { border-top: 1px solid var(--line); }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 10px; }
+  .h2 { font-size: clamp(34px, 5vw, 54px); font-weight: 700; color: var(--ink); }
+  .h3 { font-size: clamp(24px, 3vw, 32px); font-weight: 600; color: var(--ink); margin-top: 8px; }
+  .h4 { font-size: 20px; font-weight: 600; color: var(--ink); }
+  .lede { font-size: clamp(18px, 2vw, 21px); line-height: 1.5; color: var(--ink-2); max-width: 66ch; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; font-family: var(--mono); font-size: 13px; color: var(--muted); margin-top: 14px; }
+  .meta span::before { content: "//"; color: var(--accent); margin-right: 8px; }
+  .grid { display: grid; gap: 22px; }
+  .g2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .g4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  @media (max-width: 860px) { .g3, .g4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .g2, .g3, .g4 { grid-template-columns: 1fr; } }
+  .stack { display: grid; gap: 28px; }
+  .two { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+  .two.rev { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); }
+  @media (max-width: 860px) { .two, .two.rev { grid-template-columns: 1fr; } }
+
+  /* ---------- figures ---------- */
+  figure { margin: 0; }
+  figure img { width: 100%; border-radius: var(--radius); background: #fff; border: 1px solid var(--line); }
+  figure.tall img { object-fit: cover; aspect-ratio: 3 / 4; }
+  /* Inside a grid or strip every image gets the SAME box, so the captions
+     underneath all start on the same line no matter the source proportions. */
+  .grid figure img, .strip figure img { aspect-ratio: 16 / 9; object-fit: contain; padding: 6px; }
+  .grid.wide figure img { aspect-ratio: 12 / 5; }
+  .grid.ph figure img, .strip.ph figure img { aspect-ratio: 4 / 3; object-fit: cover; padding: 0; }
+  .grid.sq figure img, .strip.sq figure img { aspect-ratio: 1 / 1; object-fit: cover; padding: 0; }
+  .grid figure, .strip figure { display: flex; flex-direction: column; }
+  figcaption { font-size: 13.5px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+  .zoom { cursor: zoom-in; position: relative; }
+  .zoom img { transition: transform .35s ease, box-shadow .35s ease; }
+  .zoom:hover img { transform: translateY(-2px); box-shadow: var(--shadow); }
+  .zoom::after { content: "\2922"; position: absolute; right: 8px; top: 8px; width: 26px; height: 26px; display: grid; place-items: center; background: rgba(26,26,46,.7); color: #fff; border-radius: 4px; font-size: 14px; opacity: 0; transition: opacity .2s; }
+  .zoom:hover::after { opacity: 1; }
+  .banner { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); position: relative; aspect-ratio: 16 / 7; }
+  .banner img { position: absolute; inset: -9% 0; width: 100%; height: 118%; object-fit: cover; border: 0; border-radius: 0; padding: 0; aspect-ratio: auto; will-change: transform; }
+  @media (max-width: 560px) { .banner { aspect-ratio: 4 / 3; } }
+
+  /* ---------- components ---------- */
+  .tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  @media (max-width: 700px) { .tiles { grid-template-columns: 1fr; } }
+  .tile { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--accent); padding: 18px 20px; }
+  .tile b { display: block; font-family: var(--display); font-size: 30px; font-weight: 700; color: var(--blue); line-height: 1; margin-bottom: 8px; }
+  .tile span { font-size: 14px; color: var(--muted); }
+  .facts { display: grid; grid-template-columns: max-content 1fr; border: 1px solid var(--line); background: var(--surface); font-size: 15px; }
+  .facts dt { font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--blue); padding: 12px 16px; background: var(--surface-2); border-bottom: 1px solid var(--line); margin: 0; }
+  .facts dd { margin: 0; padding: 12px 16px; border-bottom: 1px solid var(--line); color: var(--ink-2); }
+  .facts dt:last-of-type, .facts dd:last-of-type { border-bottom: 0; }
+  @media (max-width: 560px) { .facts { grid-template-columns: 1fr; } .facts dt { border-bottom: 0; padding-bottom: 4px; } }
+  .panel { background: var(--surface); border: 1px solid var(--line); padding: clamp(18px, 3vw, 28px); }
+  .panel.accent { border-left: 4px solid var(--accent); }
+  .list { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 10px; }
+  .list li { padding-left: 22px; position: relative; color: var(--ink-2); }
+  .list li::before { content: ""; position: absolute; left: 0; top: .72em; width: 12px; height: 2px; background: var(--accent); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font-family: var(--mono); font-size: 13px; padding: 6px 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; color: var(--ink-2); }
+  .dark-band { background: var(--navy); color: var(--on-navy); }
+  .dark-band .h2, .dark-band .h3 { color: var(--on-navy); }
+  .dark-band .lede { color: var(--on-navy-muted); }
+  .dark-band .meta { color: var(--on-navy-muted); }
+
+  /* steps */
+  .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; counter-reset: step; }
+  @media (max-width: 860px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
+  .step { background: var(--surface); border: 1px solid var(--line); padding: 16px 18px 18px; counter-increment: step; }
+  .step::before { content: counter(step, decimal-leading-zero); font-family: var(--display); font-weight: 700; font-size: 26px; color: var(--accent); display: block; line-height: 1; margin-bottom: 8px; }
+  .step b { display: block; font-weight: 600; margin-bottom: 4px; }
+  .step span { font-size: 14px; color: var(--muted); }
+
+  /* timeline (process) */
+  .timeline { display: grid; gap: 0; position: relative; }
+  .tl { display: grid; grid-template-columns: minmax(0, 0.62fr) minmax(0, 1.6fr); gap: clamp(20px, 3.5vw, 56px); padding-block: 30px; border-top: 1px solid var(--line); }
+  .tl:first-child { border-top: 0; }
+  .tl .n { font-family: var(--display); font-weight: 700; font-size: 46px; line-height: .85; color: var(--accent); display: block; }
+  .tl .side { position: sticky; top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + 30px); }
+  .tl .side .h4 { margin-top: 8px; }
+  .tl .body { display: grid; gap: 18px; }
+  .tl .body p { max-width: none; }
+  @media (max-width: 880px) { .tl { grid-template-columns: 1fr; gap: 10px; } .tl .side { position: static; display: flex; align-items: baseline; gap: 14px; } .tl .side .h4 { margin-top: 0; } }
+
+  /* horizontal strip */
+  .strip { display: grid; grid-auto-flow: column; grid-auto-columns: min(78vw, 330px); gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; scrollbar-color: var(--accent) var(--surface-2); }
+  .strip > * { scroll-snap-align: start; }
+  .strip figure { background: var(--surface); border: 1px solid var(--line); padding: 10px; }
+  .strip figure img { border: 0; }
+  .strip .k { font-family: var(--display); font-weight: 700; font-size: 22px; color: var(--accent); }
+  .strip-hint { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+  /* results bars */
+  .bars { display: grid; gap: 14px; }
+  .bar { display: grid; grid-template-columns: 150px minmax(0, 1fr) 90px; gap: 12px; align-items: center; font-size: 14px; }
+  .bar .lbl { font-family: var(--mono); font-size: 13px; color: var(--ink-2); }
+  .bar .track { height: 16px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+  /* bar length is proportional to the value, measured against the largest in its
+     own chart; the fill is anchored at zero with a rounded data-end */
+  .bar .fill { height: 100%; width: var(--w); background: var(--blue); border-radius: 0 4px 4px 0; transition: width 1.05s cubic-bezier(.2,.7,.2,1); }
+  .bar .fill.energy { background: var(--accent); }
+  .bar .val { font-family: var(--mono); font-size: 13px; text-align: right; font-variant-numeric: tabular-nums; color: var(--ink); }
+  .bars.below .fill, .bars.above .fill { width: 0; }
+  .bars .note { font-size: 12.5px; color: var(--muted); margin: 0; max-width: none; }
+  @media (max-width: 560px) { .bar { grid-template-columns: 110px minmax(0, 1fr) 80px; } }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; background: var(--surface); }
+  th { text-align: left; font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; background: var(--blue); color: #fff; padding: 10px 12px; }
+  :root[data-theme="dark"] th { color: var(--navy); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) th { color: var(--navy); } }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-2); }
+  td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
+
+  /* hero */
+  .hero { background: var(--navy); color: var(--on-navy); position: relative; overflow: hidden; }
+  .hero-media { position: absolute; inset: -12% 0; }
+  .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 45%; opacity: .55; will-change: transform; animation: drift 28s ease-in-out infinite alternate; }
+  @keyframes drift { from { scale: 1; } to { scale: 1.09; } }
+  @media (prefers-reduced-motion: reduce) { .hero-media img { animation: none; } }
+  .hero-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(26,26,46,.96) 0%, rgba(26,26,46,.82) 45%, rgba(26,26,46,.25) 100%), linear-gradient(0deg, rgba(26,26,46,1) 0%, rgba(26,26,46,0) 35%); }
+  .hero-inner { position: relative; padding-block: clamp(56px, 7vw, 104px) clamp(48px, 6vw, 84px); display: grid; gap: 18px; max-width: 940px; }
+  /* the five disciplines, all visible at once */
+  .disciplines { display: grid; gap: 8px; }
+  .disciplines .pre { font-family: var(--mono); font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--on-navy-muted); }
+  .disciplines ul { display: flex; flex-wrap: wrap; gap: 10px 22px; list-style: none; margin: 0; padding: 0; font-family: var(--display); font-weight: 600; font-size: clamp(19px, 2.3vw, 28px); color: #fff; }
+  .disciplines li { padding-bottom: 4px; border-bottom: 2px solid rgba(233, 69, 96, .6); }
+  .scroll-cue { position: relative; display: inline-flex; align-items: center; gap: 12px; margin: 0 clamp(16px, 4vw, 40px) 26px; font-family: var(--mono); font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--on-navy-muted); text-decoration: none; }
+  .scroll-cue .cue-line { width: 1px; height: 40px; background: linear-gradient(var(--accent), transparent); position: relative; overflow: hidden; }
+  .scroll-cue .cue-line::after { content: ""; position: absolute; inset: 0; background: var(--accent); animation: cue 2.1s ease-in-out infinite; }
+  @keyframes cue { 0% { transform: translateY(-100%); } 60%, 100% { transform: translateY(100%); } }
+  @media (prefers-reduced-motion: reduce) { .scroll-cue .bar::after { animation: none; } }
+  .hero .eyebrow { color: var(--accent); }
+  .hero h1 { font-size: clamp(42px, 7.4vw, 88px); font-weight: 700; line-height: .95; letter-spacing: .005em; color: #fff; }
+  .hero .role { font-family: var(--display); font-size: clamp(22px, 3vw, 32px); font-weight: 500; color: var(--on-navy-muted); }
+  .hero .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hero .tags span { font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; padding: 6px 10px; border: 1px solid rgba(255,255,255,.25); border-radius: 3px; color: var(--on-navy); }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--display); font-weight: 600; font-size: 18px; letter-spacing: .04em; text-transform: uppercase; padding: 12px 20px; border-radius: 4px; text-decoration: none; transition: transform .2s, background .2s; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-ghost { border: 1px solid rgba(255,255,255,.35); color: #fff; }
+  .hero-stats { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid rgba(255,255,255,.12); }
+  .hero-stats div { padding: 18px clamp(16px, 4vw, 40px); border-right: 1px solid rgba(255,255,255,.12); }
+  .hero-stats div:last-child { border-right: 0; }
+  .hero-stats b { display: block; font-family: var(--display); font-size: 26px; font-weight: 700; color: #fff; line-height: 1.1; }
+  .hero-stats span { font-size: 13px; color: var(--on-navy-muted); }
+  @media (max-width: 700px) { .hero-stats { grid-template-columns: 1fr; } .hero-stats div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); } .hero-media img { object-position: 68% 38%; } }
+
+  /* project header */
+  .project-head { display: grid; gap: 8px; margin-bottom: 30px; }
+  .project-head .num { font-family: var(--display); font-weight: 700; font-size: 16px; letter-spacing: .12em; color: var(--accent); }
+  .sub { margin-top: 44px; }
+  /* Section intro: the heading sits in its own rail so the prose can run the
+     full width of the page instead of stopping halfway across it. */
+  .intro { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr); gap: clamp(22px, 4vw, 60px); align-items: start; }
+  .intro > :first-child { padding-top: 2px; }
+  .intro p { max-width: none; }
+  .intro .h3 { margin-top: 0; }
+  @media (max-width: 880px) { .intro { grid-template-columns: 1fr; gap: 14px; } }
+
+  /* education timeline */
+  .edu { display: grid; gap: 0; border-left: 2px solid var(--line); }
+  .edu > div { position: relative; padding: 0 0 26px 26px; }
+  .edu > div::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+  .edu .when { font-family: var(--mono); font-size: 12.5px; color: var(--muted); letter-spacing: .04em; }
+  .edu .what { font-family: var(--display); font-size: 24px; font-weight: 600; margin: 2px 0 6px; }
+  .edu .where { font-size: 14.5px; color: var(--ink-2); }
+
+  /* contact */
+  .contact { background: var(--navy); color: var(--on-navy); }
+  .contact .h2 { color: #fff; }
+  .contact-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; align-items: center; }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+  .contact a { color: #fff; font-family: var(--display); font-size: clamp(22px, 3vw, 30px); font-weight: 600; text-decoration: none; display: block; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.14); }
+  .contact a:hover { color: var(--accent); }
+  .contact a small { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--on-navy-muted); }
+  .contact img { border-radius: var(--radius); }
+  footer { background: var(--navy); color: var(--on-navy-muted); font-size: 13px; padding: 18px 0 calc(18px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid rgba(255,255,255,.08); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+  /* Reveal: content eases in as it comes into view and eases back out as it
+     leaves, in both scroll directions. Only classes JS sets can hide anything,
+     so a script error can never leave the page blank. */
+  .rv, .rv-group > * { transition: opacity .55s cubic-bezier(.22,.61,.36,1), transform .55s cubic-bezier(.22,.61,.36,1); }
+  .rv.below, .rv-group.below > * { opacity: 0; transform: translateY(28px); }
+  .rv.above, .rv-group.above > * { opacity: 0; transform: translateY(-28px); }
+  /* figures settle out of a slight push-in rather than a flat fade */
+  figure.zoom img { transition: transform .8s cubic-bezier(.22,.61,.36,1), box-shadow .35s ease; }
+  .rv.below figure.zoom img, .rv-group.below figure.zoom img,
+  .rv.above figure.zoom img, .rv-group.above figure.zoom img { transform: scale(1.05); }
+  /* headings rise out from behind a mask, word by word */
+  .ln { display: inline-block; overflow: hidden; vertical-align: bottom; padding-bottom: .04em; }
+  .ln > i { display: inline-block; font-style: inherit; transform: translateY(0); transition: transform .8s cubic-bezier(.22,.61,.36,1); }
+  .below .ln > i, .above .ln > i { transform: translateY(110%); }
+  @media (prefers-reduced-motion: reduce) {
+    .ln > i, .below .ln > i, .above .ln > i { transform: none !important; transition: none; }
+    figure.zoom img { transition: none; transform: none !important; }
+  }
+  .rv-group > *:nth-child(2) { transition-delay: .05s; }
+  .rv-group > *:nth-child(3) { transition-delay: .10s; }
+  .rv-group > *:nth-child(4) { transition-delay: .15s; }
+  .rv-group > *:nth-child(5) { transition-delay: .20s; }
+  .rv-group > *:nth-child(6) { transition-delay: .25s; }
+  /* "Reduce motion" drops travel, parallax and easing but keeps gentle fades,
+     so the page still breathes instead of going completely flat. */
+  @media (prefers-reduced-motion: reduce) {
+    .rv, .rv-group > * { transition: opacity .45s ease; transition-delay: 0s !important; }
+    .rv.below, .rv.above, .rv-group.below > *, .rv-group.above > * { opacity: 0; transform: none; }
+  }
+
+  /* lightbox */
+  .lb { position: fixed; inset: 0; background: rgba(12, 13, 24, .94); z-index: 200; display: none; align-items: center; justify-content: center; padding: 24px; }
+  .lb.open { display: flex; }
+  .lb img { max-width: min(96vw, 1400px); max-height: calc(100vh - 140px); width: auto; height: auto; background: #fff; border-radius: 4px; }
+  .lb figcaption { color: #E4E7F0; text-align: center; margin-top: 12px; font-size: 14px; }
+  .lb figure { display: grid; justify-items: center; }
+  .lb button { position: absolute; background: rgba(255,255,255,.1); color: #fff; border: 1px solid rgba(255,255,255,.25); width: 44px; height: 44px; border-radius: 50%; font-size: 20px; cursor: pointer; display: grid; place-items: center; }
+  .lb button:hover { background: rgba(255,255,255,.22); }
+  .lb .close { top: 18px; right: 18px; }
+  .lb .prev { left: 14px; top: 50%; transform: translateY(-50%); }
+  .lb .next { right: 14px; top: 50%; transform: translateY(-50%); }
+  .lb .count { position: absolute; left: 18px; top: 26px; font-family: var(--mono); font-size: 12px; color: #B4BACB; }
+  .totop { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); width: 44px; height: 44px; border-radius: 50%; background: var(--navy); color: #fff; border: 1px solid rgba(255,255,255,.2); display: grid; place-items: center; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity .3s; z-index: 40; font-size: 18px; }
+  .totop.show { opacity: 1; pointer-events: auto; }
+</style>
+</head>
+<body>
+<a class="skip" href="#profile">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><span class="mark"></span>Ateeb Rahman</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#profile" data-nav="profile">Profile</a>
+      <a href="#aileron" data-nav="aileron">SA-25 Aileron</a>
+      <a href="#birdstrike" data-nav="birdstrike">Bird Strike</a>
+      <a href="#pravega" data-nav="pravega">Pravega Racing</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#education" data-nav="education">Education</a>
+      <a href="#contact" data-nav="contact" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+<div class="progress" aria-hidden="true"></div>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-media" aria-hidden="true"><img src="images/sa25_hero.jpg" alt="" data-par="0.16"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Engineering portfolio</div>
+    <h1 data-split>Mohammed Ateeb ur Rahman</h1>
+    <div class="role">Mechanical Design and Structural Engineer</div>
+    <div class="disciplines">
+      <span class="pre">Working across</span>
+      <ul>
+        <li>Composite design</li>
+        <li>Stress and structural analysis</li>
+        <li>Aerospace</li>
+        <li>Automotive</li>
+        <li>Motorsport</li>
+      </ul>
+    </div>
+    <p class="lede" style="color: var(--on-navy-muted);">I take components from a set of constraints through hand calculations, CAD and FEA to a finished, validated part, and I am as comfortable on the workshop floor as I am in front of a model.</p>
+    <div class="cta"><a class="btn btn-primary" href="#aileron">View the work</a><a class="btn btn-ghost" href="#contact">Get in touch</a></div>
+  </div>
+  <a class="scroll-cue" href="#profile" aria-label="Scroll to profile"><span class="cue-line"></span>Scroll</a>
+  <div class="hero-stats">
+    <div><b>MSc, Cranfield</b><span>Aerospace Vehicle Design, 2026</span></div>
+    <div><b>Two years</b><span>Composite design and manufacture, Pravega Racing (Formula Student)</span></div>
+    <div><b>Concept to part</b><span>Hand calculations, CAD, FEA, composite manufacture and non-destructive testing</span></div>
+  </div>
+</section>
+
+<!-- ================= PROFILE ================= -->
+<section id="profile" class="section">
+  <div class="wrap">
+    <div class="two">
+      <div class="stack rv">
+        <div>
+          <div class="eyebrow">Profile</div>
+          <h2 class="h2" data-split>About me</h2>
+        </div>
+        <p>I hold an MSc in Aerospace Vehicle Design from Cranfield University and a BTech in Mechanical Engineering with an automotive specialisation from Vellore Institute of Technology, where I was ranked in the top 10 of my cohort. Alongside my degree I spent two years with Pravega Racing, the Formula Student team at VIT, first as a Composites Engineer and then as Composites R&amp;D Lead.</p>
+        <p>At Cranfield I was a project manager for the SA-25 Phantom supersonic airliner group design project, leading the structural design team through the preliminary and critical design reviews, and I designed the aircraft's low speed aileron from loads through to fatigue and damage tolerance. My individual research project compared the bird strike response of three fibre metal laminates using explicit dynamics in ABAQUS.</p>
+        <p>At Pravega Racing I led composite and structural component design across the aerodynamic package, bodywork and suspension. I designed suspension A-Arm structures to fixed hardpoints, laid up and vacuum bagged carbon and glass fibre parts myself, produced drawings, BOMs and assembly documentation, and carried out liquid penetrant testing on the welded chassis with another team member.</p>
+        <div class="panel accent">
+          <div class="h4">What I am looking for</div>
+          <p style="margin-top:8px">Engineering roles where design, analysis and manufacture meet. I am applying for positions in composite design, mechanical design, and stress and structural analysis across aerospace, automotive and motorsport.</p>
+        </div>
+      </div>
+      <div class="stack rv">
+        <figure class="tall"><img src="images/profile_graduation.jpg" alt="Ateeb at his MSc graduation, Cranfield University"><figcaption>MSc graduation, Cranfield University, 2026</figcaption></figure>
+        <dl class="facts">
+          <dt>Location</dt><dd>Milton Keynes, UK</dd>
+          <dt>Email</dt><dd><a href="mailto:ateeb.hp@gmail.com">ateeb.hp@gmail.com</a></dd>
+          <dt>Phone</dt><dd><a href="tel:+447721160253">+44 7721 160253</a></dd>
+          <dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/ateeb-rahman" target="_blank" rel="noopener">linkedin.com/in/ateeb-rahman</a></dd>
+          <dt>Languages</dt><dd>English (fluent), Hindi, Urdu, German (basic)</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECT 01: AILERON ================= -->
+<section id="aileron" class="section">
+  <div class="wrap">
+    <div class="project-head rv">
+      <div class="num">PROJECT 01</div>
+      <h2 class="h2" data-split>SA-25 Phantom: Low Speed Aileron Structural Design</h2>
+      <p class="lede">Low-boom, low-drag supersonic airliner. MSc Aerospace Vehicle Design Group Design Project, Cranfield University.</p>
+      <div class="meta"><span>March 2025 to October 2025</span><span>Project Manager, structural design team</span><span>Low speed aileron designer</span><span>CATIA V6 on 3DEXPERIENCE, NASTRAN/PATRAN, AFGROW</span></div>
+    </div>
+
+    <figure class="banner zoom rv" data-group="sa25"><img data-par="0.1" src="images/sa25_clean.jpg" alt="Render of the SA-25 Phantom flying above clouds"><figcaption>The SA-25 Phantom, rendered by the project team</figcaption></figure>
+
+    <div class="two sub">
+      <div class="stack rv">
+        <h3 class="h3" data-split>The aircraft and my role</h3>
+        <p>The SA-25 Phantom is a 100-passenger supersonic airliner designed with low drag and a reduced sonic boom in mind. It continues a line of Cranfield supersonic design projects and was developed by a team of twelve, split into a structures subgroup of seven and a systems subgroup of five. The whole project was modelled and managed in 3DEXPERIENCE.</p>
+        <p>I had two responsibilities. As a project manager I led the structural design team through the Preliminary Design Review and the Critical Design Review, ran the weekly progress meetings, and looked after configuration control, BOM generation and technical documentation in 3DEXPERIENCE, using its Gantt chart and issue and risk management widgets to track tasks, actions and decisions. As a structures engineer I owned the low speed aileron, one of the wing trailing edge devices, from loading actions through structural layout, detail sizing, FEA, lug design and fatigue assessment to the final CAD model.</p>
+        <div class="tiles">
+          <div class="tile"><b>100</b><span>Passengers, low-boom, low-drag supersonic airliner</span></div>
+          <div class="tile"><b>166 t</b><span>Maximum take-off mass, with an operating empty mass of 77 t</span></div>
+          <div class="tile"><b>12</b><span>Engineers: structures subgroup of seven, systems subgroup of five</span></div>
+        </div>
+      </div>
+      <div class="grid rv-group">
+        <figure class="zoom" data-group="sa25"><img src="images/sa25_structures.jpg" alt="Internal structure model of the SA-25 Phantom"><figcaption>Internal structure of the SA-25 Phantom assembled in 3DEXPERIENCE</figcaption></figure>
+        <figure class="zoom" data-group="sa25"><img src="images/sa25_topdown.jpg" alt="Top view render of the SA-25 with wingspan marked"><figcaption>Top view render with the 23.03 m wingspan marked</figcaption></figure>
+        <figure class="zoom" data-group="sa25"><img src="images/sa25_side_view.jpg" alt="Side view of the SA-25 Phantom"><figcaption>Side view</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="sub intro rv">
+      <div><h3 class="h3" data-split>The component</h3></div>
+      <div><p>The low speed aileron sits on the outboard side of the wing and provides additional roll control at low speeds and altitudes, supplementing the high speed aileron so that roll performance is safe and effective in critical flight phases. It deflects up to plus or minus 20 degrees. Because no current certification standard covers a supersonic airliner on its own, the design had to meet EASA CS-25, which was never written for supersonic aircraft, alongside the older Concorde-era Transport Standard Specification (TSS).</p></div>
+    </div>
+    <div class="sub" style="margin-top:22px">
+      <div class="grid g2 rv-group">
+        <figure class="zoom" data-group="aileron"><img src="images/aileron_cad_skin.png" alt="CAD model of the low speed aileron with skin"><figcaption>CAD model of the low speed aileron with skin</figcaption></figure>
+        <figure class="zoom" data-group="aileron"><img src="images/aileron_cad_structure.png" alt="CAD model of the aileron internal structure"><figcaption>Internal structure: one C-spar, seven ribs and the attachment lugs</figcaption></figure>
+      </div>
+      <dl class="facts rv" style="margin-top:22px">
+        <dt>Span and chord</dt><dd>2.313 m span, 1.437 m average chord, 3.32 m² total area</dd>
+        <dt>Structure</dt><dd>1 C-spar and 7 ribs (3 main I-ribs, 2 intermediate I-ribs, 2 closing C-ribs)</dd>
+        <dt>Attachments</dt><dd>3 hinges to the wing, 2 actuator lugs for control input, 1 support lug for structural stability</dd>
+        <dt>Materials</dt><dd>8552/HM63 composite for ribs and spar, M21/IMA composite for the skin, Al-7075 for lugs and fittings, S99 steel bolts</dd>
+        <dt>Certification</dt><dd>EASA CS-25 with the Transport Standard Specification (TSS) as the reference for supersonic-specific cases</dd>
+        <dt>Final mass</dt><dd>53.87 kg (skin 47 kg, spar 1.92 kg, ribs 3.88 kg, attachments 1.07 kg), a 52% reduction against the baseline</dd>
+      </dl>
+    </div>
+
+    <div class="sub">
+      <div class="rv"><div class="eyebrow">Process</div><h3 class="h3" data-split>From loads to fatigue life</h3></div>
+      <div class="timeline" style="margin-top:12px">
+
+        <div class="tl rv">
+          <div class="side"><span class="n">1</span><div class="h4">Loading actions</div></div>
+          <div class="body">
+            <p>The structures subgroup split the loading actions between a symmetric team and an asymmetric team. I worked in the asymmetric team, which was responsible for roll performance and for the shear force, bending moment and torque under asymmetric load cases such as roll initiation, steady roll, roll arresting and roll reversal, as well as engine attachment loads. For the aileron itself I compared two-hinge, three-hinge and four-hinge arrangements, selected the three-hinge system because it distributed the loads more evenly with lower peak hinge loads, and produced the shear force, bending moment and torque diagrams along the span.</p>
+            <p>The CAD model then revealed a packaging problem. The outboard hinge had only 30 mm of depth available, not enough for an actuator, so the actuator had to move inboard to the middle hinge. This asymmetric actuator placement produces significantly more twist when the aileron is deflected, and that torque case drove the stiffness requirement for the whole structure.</p>
+            <div class="grid g2 wide rv-group">
+              <figure class="zoom" data-group="loads"><img src="images/aileron_shear_force.jpg" alt="Shear force diagram along the aileron span"><figcaption>Shear force along the aileron span for the three-hinge system</figcaption></figure>
+              <figure class="zoom" data-group="loads"><img src="images/aileron_bending_moment.jpg" alt="Bending moment diagram along the aileron span"><figcaption>Bending moment along the span</figcaption></figure>
+              <figure class="zoom" data-group="loads"><img src="images/aileron_torque.jpg" alt="Torque distribution comparing symmetric and asymmetric actuator layouts"><figcaption>Torque distribution: symmetric actuator layout against the asymmetric layout forced by the 30 mm outboard hinge depth</figcaption></figure>
+              <figure class="zoom" data-group="loads"><img src="images/aileron_layout.jpg" alt="Initial structural layout sketches of the aileron"><figcaption>Initial structural layout: top view, lateral cross-section and longitudinal cross-section</figcaption></figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl rv">
+          <div class="side"><span class="n">2</span><div class="h4">Structural layout, materials and sizing</div></div>
+          <div class="body">
+            <p>With the loads fixed I set out the initial structural layout, a single spar with ribs at the hinge and actuator stations, and sized the skin, ribs and spar from first principles using free body diagrams of the shear and axial loads, laminate force intensities and the ply proportions in each orientation. Material selection weighed the supersonic flight temperature as well as strength and stiffness, which is why the ribs and spar use 8552/HM63, the skin uses M21/IMA and the lugs use Al-7075. Manufacturing was considered at the same time, including the web to flange layup sequence, ply drop-offs and the filler at the trailing edge.</p>
+          </div>
+        </div>
+
+        <div class="tl rv">
+          <div class="side"><span class="n">3</span><div class="h4">Finite element analysis in NASTRAN/PATRAN</div></div>
+          <div class="body">
+            <p>Because of the aileron geometry the analytical laminate sizing was followed by a full finite element model in PATRAN, solved in NASTRAN. Skins, ribs and spar were modelled with shell elements and the rib flanges with beam elements, surfaces were equivalenced so that loads transfer cleanly between components, and the lugs were constrained at the hinge points. The pressure distributions for the subsonic case and the supersonic case (Mach 1.8) were applied separately. I then checked deformation, stress distribution, buckling and reserve factors across skins, ribs, spars and attachment lugs and iterated the layup until every component sat within its allowable limits.</p>
+            <div class="grid g2 wide rv-group">
+              <figure class="zoom" data-group="fea"><img src="images/aileron_mesh.jpg" alt="Finite element mesh of the aileron"><figcaption>Generated mesh with beam elements along the rib flanges</figcaption></figure>
+              <figure class="zoom" data-group="fea"><img src="images/aileron_fea_initial.jpg" alt="Initial deformation plot"><figcaption>Initial deformation result, before the layup was revised</figcaption></figure>
+              <figure class="zoom" data-group="fea"><img src="images/aileron_fea_subsonic.jpg" alt="Final subsonic deformation plot"><figcaption>Final subsonic deformation, maximum tip deformation 18.2 mm</figcaption></figure>
+              <figure class="zoom" data-group="fea"><img src="images/aileron_fea_supersonic.jpg" alt="Final supersonic deformation plot"><figcaption>Final supersonic deformation</figcaption></figure>
+              <figure class="zoom" data-group="fea"><img src="images/aileron_fea_vonmises.jpg" alt="Von Mises stress distribution"><figcaption>Von Mises stress distribution, all components within allowable limits</figcaption></figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl rv">
+          <div class="side"><span class="n">4</span><div class="h4">Lug design and attachments</div></div>
+          <div class="body">
+            <p>The aileron attaches to the wing through three hinges, two actuator lugs and one support lug. The lugs were sized in Al-7075-T6 using ESDU 91008 for the actuation point and ESDU 08007 for the hinge point, checking tension, shear tear-out and bearing failure under both axial and transverse loading, with reserve factors evaluated for ultimate and limit loads. The actuator lug went through three design iterations. The final solution kept the arrangement of the first design but changed the lug to a 3-2 configuration, which brought the force required from a single actuator down to about 146 kN, within the 155 kN capacity of the selected actuator. Because the lugs had to sit outside the thin aileron, I also designed fairings for them, taking the Concorde actuator fairing as the reference.</p>
+            <div class="grid g4 rv-group">
+              <figure class="zoom" data-group="lugs"><img src="images/aileron_support_lug.png" alt="Final support lug"><figcaption>Final support lug</figcaption></figure>
+              <figure class="zoom" data-group="lugs"><img src="images/aileron_actuator_lug.png" alt="Final actuator lug in a 3-2 configuration"><figcaption>Final actuator lug, 3-2 configuration</figcaption></figure>
+              <figure class="zoom" data-group="lugs"><img src="images/aileron_lug_attachment.png" alt="Lug attachment outside the aileron"><figcaption>Lug attachment outside the aileron</figcaption></figure>
+              <figure class="zoom" data-group="lugs"><img src="images/aileron_fairings.png" alt="Fairings designed for the lugs"><figcaption>Fairings designed for the lugs outside the aileron</figcaption></figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl rv">
+          <div class="side"><span class="n">5</span><div class="h4">Fatigue and damage tolerance in AFGROW</div></div>
+          <div class="body">
+            <p>Both lugs were then assessed for fatigue and damage tolerance in AFGROW. I built load spectra for the support lug, the actuator actuation point and the actuator hinge point from the TWIST stepped load spectrum and the repeated aileron deflections between neutral flight and full 20 degree deflection, ran the crack growth analysis and converted the results into the number of aileron deflections each lug can sustain. Both lugs have sufficient fatigue life for full operational use.</p>
+            <div class="grid g2 rv-group">
+              <figure class="zoom" data-group="afgrow"><img src="images/aileron_afgrow_curves.jpg" alt="Crack length against number of cycles for both lugs"><figcaption>Crack length against number of cycles for the support lug and the actuator lug</figcaption></figure>
+              <figure class="zoom" data-group="afgrow"><img src="images/aileron_afgrow_output.jpg" alt="AFGROW output for the two lugs"><figcaption>AFGROW output for the two lugs</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two sub">
+      <div class="panel accent rv">
+        <div class="eyebrow">Outcome</div>
+        <ul class="list" style="margin-top:10px">
+          <li>Aileron mass of 53.87 kg, a 52% reduction against the baseline, with all strength margins and deformation limits satisfied and a maximum tip deformation of 18.2 mm</li>
+          <li>Structure meets the lateral stability requirements, withstands ultimate loads and has sufficient fatigue life under CS-25 with TSS as the supersonic reference</li>
+          <li>Final CAD model in 3DEXPERIENCE fitted entirely within the aerodynamic envelope supplied by the CAD team, with the mass breakdown handed to the Mass and CG team</li>
+          <li>Delivered and documented through PDR and CDR alongside my project management responsibilities for the structures team</li>
+        </ul>
+      </div>
+      <figure class="zoom rv" data-group="poster"><img src="images/aileron_poster.jpg" alt="Project poster for the low speed aileron"><figcaption>Project poster for the low speed aileron. Click to read it at full size.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECT 02: BIRD STRIKE ================= -->
+<section id="birdstrike" class="section">
+  <div class="wrap">
+    <div class="project-head rv">
+      <div class="num">PROJECT 02</div>
+      <h2 class="h2" data-split>Bird Strike Simulation on Fibre Metal Laminates</h2>
+      <p class="lede">Comparative numerical simulation of bird strike on ARALL, CARALL and GLARE leading edge skins using Smoothed Particle Hydrodynamics. MSc Individual Research Project, Cranfield University.</p>
+      <div class="meta"><span>November 2025 to January 2026</span><span>Supervisor: Dr. Ioannis Giannopoulos</span><span>ABAQUS/Explicit, SPH, Johnson-Cook, Hashin</span></div>
+    </div>
+    <div class="two">
+      <div class="stack rv">
+        <p>Bird strike is a critical loading condition for the external skin of an aircraft during take-off and landing, and fibre metal laminates are used on leading edges because they resist impact well and slow crack growth in the metallic layers. This project compared three widely used fibre metal laminates under an identical bird strike so that the differences in the results could be attributed to the laminate systems alone.</p>
+        <p>I built the simulations in ABAQUS/Explicit with the bird modelled as a soft body using Smoothed Particle Hydrodynamics, which captures the large deformation and fragmentation of the bird on impact, and the laminate skins modelled with finite elements. The aluminium layers use the Johnson-Cook ductile damage model and the composite plies use the Hashin failure criterion. The impact case follows CS-25.631: a 1.82 kg bird at 180 m/s. Geometry, laminate stacking, boundary conditions and impact velocity were kept identical for ARALL, CARALL and GLARE, and each system was assessed on the out-of-plane deformation of the skin and the internal energy absorbed during the impact.</p>
+        <div class="tiles">
+          <div class="tile"><b>1.82 kg</b><span>Bird mass, CS-25.631</span></div>
+          <div class="tile"><b>180 m/s</b><span>Impact velocity</span></div>
+          <div class="tile"><b>3 FMLs</b><span>ARALL, CARALL and GLARE under identical conditions</span></div>
+        </div>
+      </div>
+      <div class="grid rv-group">
+        <figure class="zoom" data-group="bird"><img src="images/birdstrike_model.jpg" alt="Leading edge skin mesh with the SPH bird before impact"><figcaption>Leading edge skin mesh with the SPH bird before impact</figcaption></figure>
+        <figure class="zoom" data-group="bird"><img src="images/birdstrike_sequence.jpg" alt="Bird strike impact sequence"><figcaption>Impact sequence at 0, 0.03, 0.08 and 0.15 ms, with and without the SPH particles shown</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="two sub">
+      <div class="stack rv">
+        <h3 class="h3" data-split>Results</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Fibre metal laminate</th><th>Peak deformation</th><th>Energy absorbed</th><th>Relative weight</th></tr></thead>
+            <tbody>
+              <tr><td>ARALL (Kevlar 49)</td><td>189.91 mm</td><td>13.96 kJ</td><td>1.00</td></tr>
+              <tr><td>CARALL (IM7/8552 carbon)</td><td>129.15 mm</td><td>5.14 kJ</td><td>1.29</td></tr>
+              <tr><td>GLARE (S2 glass)</td><td>169.90 mm</td><td>11.95 kJ</td><td>1.42</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bars rv" id="bars">
+          <div class="eyebrow" style="margin:0">Peak deformation (mm)</div>
+          <p class="note">Bar length is relative to the largest value. Less deformation means less risk of striking the structure behind the skin.</p>
+          <div class="bar" title="ARALL, peak deformation 189.91 mm"><span class="lbl">ARALL</span><div class="track"><div class="fill" style="--w:100%"></div></div><span class="val">189.91</span></div>
+          <div class="bar" title="GLARE, peak deformation 169.90 mm"><span class="lbl">GLARE</span><div class="track"><div class="fill" style="--w:89.5%"></div></div><span class="val">169.90</span></div>
+          <div class="bar" title="CARALL, peak deformation 129.15 mm"><span class="lbl">CARALL</span><div class="track"><div class="fill" style="--w:68%"></div></div><span class="val">129.15</span></div>
+          <div class="eyebrow" style="margin:10px 0 0">Energy absorbed (kJ)</div>
+          <p class="note">More absorbed energy means more of the impact is dissipated by the skin itself.</p>
+          <div class="bar" title="ARALL, energy absorbed 13.96 kJ"><span class="lbl">ARALL</span><div class="track"><div class="fill energy" style="--w:100%"></div></div><span class="val">13.96</span></div>
+          <div class="bar" title="GLARE, energy absorbed 11.95 kJ"><span class="lbl">GLARE</span><div class="track"><div class="fill energy" style="--w:85.6%"></div></div><span class="val">11.95</span></div>
+          <div class="bar" title="CARALL, energy absorbed 5.14 kJ"><span class="lbl">CARALL</span><div class="track"><div class="fill energy" style="--w:36.8%"></div></div><span class="val">5.14</span></div>
+        </div>
+      </div>
+      <div class="grid rv-group">
+        <figure class="zoom" data-group="birdres"><img src="images/birdstrike_deformation.jpg" alt="Leading edge skin deformation against time for the three laminates"><figcaption>Leading edge skin deformation against time</figcaption></figure>
+        <figure class="zoom" data-group="birdres"><img src="images/birdstrike_energy.jpg" alt="Internal energy absorbed by the skin against time"><figcaption>Internal energy absorbed by the skin against time</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="two sub">
+      <div class="rv">
+        <h3 class="h3" data-split>What the results showed</h3>
+        <ul class="list" style="margin-top:14px">
+          <li>CARALL limits deformation best, about 24% lower than GLARE, and ARALL deforms about 47% more than CARALL, because the IM7/8552 carbon plies have a much higher modulus than S2 glass or Kevlar 49. That stiffness comes with brittle behaviour: failed elements appear in the CARALL skin late in the impact, and once damage starts the laminate loses stiffness without absorbing much more energy</li>
+          <li>ARALL deforms the most but absorbs the most energy, 13.96 kJ against 5.14 kJ for CARALL, and it is also the lightest of the three, which makes it the most efficient energy absorber on a weight basis</li>
+          <li>GLARE sits between the two. It is the heaviest laminate, but it combines moderate deformation with progressive energy absorption through aluminium plasticity and composite damage, which matters under AMC 25.631 because lower skin deflection reduces the risk of secondary damage to ribs, spars and systems behind the leading edge. This balance explains why GLARE is so widely used on impact-exposed structures</li>
+          <li>Bird strike resistance is governed by the balance between stiffness, deformation control and energy dissipation, so deformation and energy based metrics should be used alongside penetration when comparing laminates at the preliminary design stage</li>
+        </ul>
+      </div>
+      <figure class="zoom rv" data-group="birdres"><img src="images/birdstrike_carall_failure.jpg" alt="Element failure in the CARALL skin after impact"><figcaption>Element failure in the CARALL skin after impact (circled)</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECT 03: PRAVEGA ================= -->
+<section id="pravega" class="section">
+  <div class="wrap">
+    <div class="project-head rv">
+      <div class="num">PROJECT 03</div>
+      <h2 class="h2" data-split>Pravega Racing, Formula Student Team, VIT</h2>
+      <p class="lede">Composite aerodynamic package, bodywork, suspension A-Arm structures and non-destructive testing for the PRV20 race car.</p>
+      <div class="meta"><span>August 2021 to August 2022: Composites Engineer</span><span>September 2022 to November 2023: Composites R&amp;D Lead</span><span>ANSYS, Fusion 360, wet layup and vacuum bagging, liquid penetrant testing</span></div>
+    </div>
+    <figure class="banner zoom rv" data-group="car"><img data-par="0.1" src="images/prv_main.jpg" alt="PRV20 with its driver in the pit lane"><figcaption>PRV20, the car I worked on, in the pit lane at Formula Student East 2023</figcaption></figure>
+
+    <div class="two sub">
+      <div class="stack rv">
+        <p>Pravega Racing is the Formula Student team of Vellore Institute of Technology. I joined as a Composites Engineer in 2021 and led the composites department from September 2022, taking composite and structural component design across the suspension, aerodynamic and bodywork systems from concept through to manufacture and deployment on the car. The department's design concept was simple: make every composite part as light as possible while keeping it strong, on a car that was designed to be lightweight, well integrated and serviceable.</p>
+        <div class="h4">What I did</div>
+        <ul class="list">
+          <li>Designed suspension A-Arm structures from given hardpoint coordinates and validated them in ANSYS FEA, achieving a 10% weight reduction while meeting the load requirements</li>
+          <li>Led composite design of the wings, wing mounts, floor closeout, side panels, nosecone and sidepods, and manufactured lightweight bodywork delivering a 25% weight saving through optimised design and material selection</li>
+          <li>Carried out liquid penetrant testing on the welded chassis tubes with one other team member, to detect surface cracks before the parts progressed further into the build</li>
+          <li>Involved in sizing the bevel gear ratio connecting the steering wheel to the front wheels</li>
+          <li>Produced component drawings, BOMs and assembly documentation, and coordinated design changes across three departments to resolve production discrepancies</li>
+          <li>Investigated a manufacturing fault causing incorrect component profiles, traced it to a CAD geometry error and developed a rectification method that avoided remanufacture cost and schedule delay</li>
+          <li>Increased manufacturing process efficiency by 10% by finding and fixing recurring production bottlenecks, and trained three team members in fabrication and safety protocols</li>
+        </ul>
+      </div>
+      <div class="stack rv">
+        <div class="tiles" style="grid-template-columns:1fr">
+          <div class="tile"><b>18th of 90</b><span>Formula Student Germany 2023, international teams</span></div>
+          <div class="tile"><b>12th of 84</b><span>Formula Student East 2023, plus 2nd place Business Plan</span></div>
+          <div class="tile"><b>7th of 31</b><span>Formula Bharat 2023, plus 1st place Business Plan</span></div>
+        </div>
+        <figure class="zoom" data-group="car"><img src="images/prv_team.jpg" alt="Pravega Racing team with the car"><figcaption>Pravega Racing team with the car</figcaption></figure>
+      </div>
+    </div>
+
+    <!-- Wings -->
+    <div class="sub intro rv">
+      <div><div class="eyebrow">Aerodynamic package</div><h3 class="h3" data-split>Front and rear wings</h3></div>
+      <div><p>The wings had to be easy to assemble and disassemble while being as light as possible. Each wing element carries a different load, so each has its own layup. The main element uses one layer of carbon fibre, one layer of glass fibre and two further layers of carbon fibre, with 2x2 woven 220 GSM carbon and 2x2 woven 300 GSM glass throughout. Every element is made in a pair of male and female moulds coated with melamine for surface finish and release.</p>
+      <p>The structural analysis of the wings and wing mounts was run by other members of the composites team in ANSYS Composite PrepPost, under the downforce and drag loads supplied by the aerodynamics department, checking total deformation, safety factor and inverse reserve factor. I was involved throughout that work, and it set the laminate the parts had to be built to. My own contribution on the wings was the manufacture: mould preparation, layup, vacuum bagging, trimming, closing the elements around the foam and aluminium ribs, and final assembly.</p>
+      <div class="panel accent" style="margin-top:18px"><p style="margin:0">The analysis results shown in this section were produced by the Pravega Racing composites team rather than by me. They are included because they define the parts I built.</p></div>
+      </div>
+    </div>
+    <div class="grid g3 rv-group" style="margin-top:22px">
+      <figure class="zoom" data-group="wings"><img src="images/wing_moulds.jpg" alt="Moulds for the wing elements"><figcaption>Moulds used to manufacture the wing elements</figcaption></figure>
+      <figure class="zoom" data-group="wings"><img src="images/fw_acp_layup.jpg" alt="Front wing layup in ANSYS Composite PrepPost"><figcaption>Front wing layup in ANSYS Composite PrepPost, thickness of each panel and element</figcaption></figure>
+      <figure class="zoom" data-group="wings"><img src="images/fw_deformation.jpg" alt="Front wing total deformation"><figcaption>Front wing total deformation</figcaption></figure>
+      <figure class="zoom" data-group="wings"><img src="images/fw_safety_factor.jpg" alt="Front wing safety factor"><figcaption>Front wing safety factor</figcaption></figure>
+      <figure class="zoom" data-group="wings"><img src="images/rw_deformation.jpg" alt="Rear wing total deformation"><figcaption>Rear wing total deformation</figcaption></figure>
+      <figure class="zoom" data-group="wings"><img src="images/rw_safety_factor.jpg" alt="Rear wing safety factor"><figcaption>Rear wing safety factor</figcaption></figure>
+      <figure class="zoom" data-group="wings"><img src="images/fw_cad.png" alt="CAD model of the front wing"><figcaption>CAD model of the front wing</figcaption></figure>
+      <figure class="zoom" data-group="wings"><img src="images/fw_mount_deformation.jpg" alt="Front wing mount total deformation"><figcaption>Front wing mount total deformation</figcaption></figure>
+    </div>
+
+    <div class="two sub">
+      <div class="stack rv">
+        <div class="h4">Drawings and BOM</div>
+        <p>Every assembly was documented with drawings and a bill of materials so that the parts could be manufactured, tracked and assembled by the rest of the team. The exploded view is one I produced for a wing assembly: 21 items covering the CFRP-GFRP element halves, aluminium 6061-T6 ribs, XPS foam ribs, end plates, the gurney flap and the fasteners.</p>
+        <div class="grid g3 sq rv-group">
+          <figure class="zoom" data-group="parts"><img src="images/fw_parts.jpg" alt="Finished front wing elements before assembly"><figcaption>Finished front wing elements before assembly</figcaption></figure>
+          <figure class="zoom" data-group="parts"><img src="images/wings_assembled.jpg" alt="Front and rear wings assembled"><figcaption>Front and rear wings assembled</figcaption></figure>
+          <figure class="zoom" data-group="parts"><img src="images/nosecone_sidepods.jpg" alt="Nosecone and sidepods"><figcaption>Nosecone and sidepods</figcaption></figure>
+        </div>
+      </div>
+      <div class="grid rv-group">
+        <figure class="zoom" data-group="bom"><img src="images/bom_exploded.jpg" alt="Wing assembly exploded view"><figcaption>Wing assembly exploded view</figcaption></figure>
+        <figure class="zoom" data-group="bom"><img src="images/bom_table.jpg" alt="21-item bill of materials"><figcaption>21-item bill of materials with part numbers, materials and quantities</figcaption></figure>
+      </div>
+    </div>
+
+    <!-- Manufacturing -->
+    <div class="sub intro rv">
+      <div><div class="eyebrow">Manufacturing</div><h3 class="h3" data-split>Composite manufacturing</h3></div>
+      <div><p>I did the layups myself rather than only specifying them. The wet layup and vacuum bagging process we used for the wing elements is set out below. The same process was used for every other wing component, the two halves of each element were then trimmed to size, closed around an XPS foam core with laser-cut aluminium ribs at the edges to give a mounting point to the endplate, and the elements and endplates were joined with screws and bolts.</p></div>
+    </div>
+    <div class="steps rv-group" style="margin-top:22px">
+      <div class="step"><b>Wax the mould</b><span>Seven to eight layers of wax so that the cured laminate releases cleanly</span></div>
+      <div class="step"><b>Cut the fabric</b><span>Cut slightly larger than the part to make the layup easier and reduce the chance of error</span></div>
+      <div class="step"><b>Weigh the resin</b><span>Resin and hardener weights calculated from the weight of the cloth</span></div>
+      <div class="step"><b>Lay up and squeegee</b><span>Resin spread between the glass and carbon layers, each layer squeezed down to remove air</span></div>
+      <div class="step"><b>Peel ply and breather</b><span>Peel ply with a release agent for the off-mould surface, breather to absorb excess resin and give the air a path out</span></div>
+      <div class="step"><b>Vacuum bag and cure</b><span>Bag taped shut and held at 400 to 500 mm Hg for 24 hours before the part and consumables are removed</span></div>
+    </div>
+    <div class="strip sq rv" style="margin-top:22px" aria-label="Layup photographs">
+      <figure class="zoom" data-group="layup"><img src="images/layup_waxing.jpg" alt="Waxing the mould"><figcaption><span class="k">01</span> Waxing the mould</figcaption></figure>
+      <figure class="zoom" data-group="layup"><img src="images/layup_cutting.jpg" alt="Cutting the carbon fabric"><figcaption><span class="k">02</span> Cutting the fabric</figcaption></figure>
+      <figure class="zoom" data-group="layup"><img src="images/layup_resin.jpg" alt="Measuring the resin"><figcaption><span class="k">03</span> Measuring the resin</figcaption></figure>
+      <figure class="zoom" data-group="layup"><img src="images/layup_spreading.jpg" alt="Spreading resin over the carbon fibre with a squeegee"><figcaption><span class="k">04</span> Spreading resin over the carbon fibre</figcaption></figure>
+      <figure class="zoom" data-group="layup"><img src="images/layup_glass.jpg" alt="Layering the glass fibre"><figcaption><span class="k">05</span> Layering the glass fibre</figcaption></figure>
+      <figure class="zoom" data-group="layup"><img src="images/side_panel.jpg" alt="Finished side panel"><figcaption><span class="k">06</span> Finished side panel</figcaption></figure>
+    </div>
+    <div class="strip-hint">Scroll sideways through the sequence, or click a photo to enlarge it.</div>
+
+    <div class="two sub">
+      <div class="stack rv">
+        <div class="h4">Bodywork and floor</div>
+        <p>The bodywork parts followed the same approach with layups chosen for each job. The floor closeout, which separates the driver from the track and carries the seat and steering rack, is a sandwich panel: two layers of carbon, one of glass, a 1 inch aluminium honeycomb core, then glass and two more layers of carbon, laid up on a waxed glass plate so that the panel comes out flat with a good surface finish. The side panels sit alongside the side impact structure between the front and main hoops. Across the bodywork this optimised design and material selection delivered a 25% weight saving.</p>
+      </div>
+      <div class="grid g3 sq rv-group">
+        <figure class="zoom" data-group="body"><img src="images/floor_closeout.jpg" alt="Carbon sandwich floor closeout"><figcaption>Carbon sandwich floor closeout between the chassis floor tubes</figcaption></figure>
+        <figure class="zoom" data-group="body"><img src="images/prv20_flag.jpg" alt="PRV20 bodywork"><figcaption>PRV20 bodywork</figcaption></figure>
+        <figure class="zoom" data-group="body"><img src="images/profile_prv20.jpg" alt="Ateeb with PRV20 at Formula Student East"><figcaption>With PRV20</figcaption></figure>
+      </div>
+    </div>
+
+    <!-- A-Arms -->
+    <div class="sub rv">
+      <div class="eyebrow">Suspension</div>
+      <h3 class="h3" data-split>Suspension A-Arm structures</h3>
+      <div class="two" style="margin-top:12px">
+        <div>
+          <p>The A-Arms are the only load path between the wheel assembly and the chassis. I was given the hardpoint coordinates and the load cases by the vehicle dynamics department and designed the arms to those constraints in Fusion 360. Each arm is a three-piece assembly, an aluminium plate machined to the geometry of that corner bonded to two carbon fibre tubes.</p>
+          <p>The plates first went through a shape optimisation study with a mass to retain criterion of 60%, then the whole assembly, including the wheel upright so that the load path was realistic, was put through a static structural analysis in ANSYS. The loads correspond to 1.8 g of lateral acceleration against roughly 1.4 g that the car sees, with a minimum acceptable safety factor of 2, which together give the design a margin over anything the car will experience. The result was a 10% weight reduction while meeting the load requirements.</p>
+        </div>
+        <div class="tiles" style="grid-template-columns:1fr 1fr">
+          <div class="tile"><b>1.8 g</b><span>Lateral load case, against roughly 1.4 g seen by the car</span></div>
+          <div class="tile"><b>SF ≥ 2</b><span>Minimum acceptable safety factor</span></div>
+          <div class="tile"><b>60%</b><span>Mass to retain in the plate shape optimisation</span></div>
+          <div class="tile"><b>10%</b><span>Weight reduction while meeting the load requirements</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid g2 rv-group" style="margin-top:22px">
+      <figure class="zoom" data-group="aarm"><img src="images/aarm_cad.png" alt="CAD models of the A-Arm plates and arms"><figcaption>CAD models of the plates and the front and rear A-Arms</figcaption></figure>
+      <figure class="zoom" data-group="aarm"><img src="images/aarm_deformation.jpg" alt="Total deformation of the A-Arm assembly"><figcaption>Total deformation of the A-Arm assembly with the upright</figcaption></figure>
+      <figure class="zoom" data-group="aarm"><img src="images/aarm_stress.jpg" alt="Equivalent stress of the A-Arm assembly"><figcaption>Equivalent (von Mises) stress</figcaption></figure>
+      <figure class="zoom" data-group="aarm"><img src="images/aarm_plate_sf.jpg" alt="Safety factor of the A-Arm plates"><figcaption>Safety factor of the plates</figcaption></figure>
+    </div>
+
+    <!-- NDT -->
+    <div class="sub intro rv">
+      <div><div class="eyebrow">Quality and testing</div><h3 class="h3" data-split>Liquid penetrant testing of the chassis welds</h3></div>
+      <div><p>The chassis is a TIG welded tubular space frame, and the quality of the welds decides whether the suspension pickup points stay where they were designed to be. Alongside a tensile test to ASTM A370, I carried out liquid penetrant testing on the welded chassis tubes together with one other team member, to find surface cracks before the parts progressed further into the build. The six stages we worked through are shown below.</p></div>
+    </div>
+    <div class="strip ph rv" style="margin-top:22px" aria-label="Penetrant testing sequence">
+      <figure class="zoom" data-group="ndt"><img src="images/penetrant_1.jpg" alt="Spraying cleaner onto the weld"><figcaption><span class="k">01</span> Spraying the cleaner onto the weld</figcaption></figure>
+      <figure class="zoom" data-group="ndt"><img src="images/penetrant_2.jpg" alt="Wiping off the cleaner"><figcaption><span class="k">02</span> Wiping off the cleaner</figcaption></figure>
+      <figure class="zoom" data-group="ndt"><img src="images/penetrant_3.jpg" alt="Applying the penetrant"><figcaption><span class="k">03</span> Applying the penetrant</figcaption></figure>
+      <figure class="zoom" data-group="ndt"><img src="images/penetrant_4.jpg" alt="Wiping off the excess penetrant"><figcaption><span class="k">04</span> Wiping off the excess penetrant after the dwell time</figcaption></figure>
+      <figure class="zoom" data-group="ndt"><img src="images/penetrant_5.jpg" alt="Applying the developer"><figcaption><span class="k">05</span> Applying the developer</figcaption></figure>
+      <figure class="zoom" data-group="ndt"><img src="images/penetrant_6.jpg" alt="Reading the result on the developed weld"><figcaption><span class="k">06</span> Reading the result: any surface crack shows as a bleed-out in the developer</figcaption></figure>
+    </div>
+    <div class="strip-hint">Scroll sideways through the six stages.</div>
+
+    <div class="sub intro rv">
+      <div><div class="h4">Competitions</div></div>
+      <div><p>The car I worked on competed at Formula Student Germany 2023, finishing 18th of 90 international teams, at Formula Student East 2023 at the Hungaroring, finishing 12th of 84 with 2nd place in the Business Plan event, and at Formula Bharat 2023, finishing 7th of 31 with 1st place in the Business Plan event.</p></div>
+    </div>
+    <div class="grid g3 ph rv-group" style="margin-top:18px">
+      <figure class="zoom" data-group="comp"><img src="images/prv20_hungaroring.jpg" alt="PRV20 on track at the Hungaroring"><figcaption>PRV20 on track at the Hungaroring</figcaption></figure>
+      <figure class="zoom" data-group="comp"><img src="images/fse_business_plan.jpg" alt="Team on stage receiving the Business Plan award"><figcaption>Business Plan Presentation, 2nd place, Formula Student East 2023</figcaption></figure>
+      <figure class="zoom" data-group="comp"><img src="images/fse_trophy.jpg" alt="Formula Student East award"><figcaption>Business Plan award, Formula Student East 2023</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow">Skills</div><h2 class="h2" data-split>Tools, methods and standards</h2></div>
+    <div class="grid g2 rv-group" style="margin-top:28px">
+      <div class="panel"><div class="h4">Design</div><div class="chips" style="margin-top:12px"><span class="chip">Mechanical and composite component design</span><span class="chip">CATIA V6 on 3DEXPERIENCE</span><span class="chip">Configuration management and PLM</span><span class="chip">Design for manufacture</span><span class="chip">Concept to production</span><span class="chip">BOM management</span><span class="chip">SolidWorks</span><span class="chip">Fusion 360</span></div></div>
+      <div class="panel"><div class="h4">Analysis</div><div class="chips" style="margin-top:12px"><span class="chip">Static stress analysis, first principles and FEM</span><span class="chip">NASTRAN/PATRAN</span><span class="chip">ABAQUS and ABAQUS/Explicit</span><span class="chip">ANSYS and Composite PrepPost</span><span class="chip">Buckling</span><span class="chip">Fatigue and damage tolerance, AFGROW</span><span class="chip">Reserve factors</span><span class="chip">Load calculation</span><span class="chip">SPH impact modelling</span><span class="chip">Composite laminate sizing</span></div></div>
+      <div class="panel"><div class="h4">Materials and testing</div><div class="chips" style="margin-top:12px"><span class="chip">CFRP and GFRP laminate design</span><span class="chip">Aluminium alloys</span><span class="chip">Fibre metal laminates</span><span class="chip">Wet layup</span><span class="chip">Vacuum bagging</span><span class="chip">Mould and tooling preparation</span><span class="chip">Liquid penetrant testing (NDT)</span><span class="chip">Component inspection</span><span class="chip">Hashin failure criteria</span><span class="chip">Johnson-Cook damage model</span><span class="chip">JH-2 and JHB models</span></div></div>
+      <div class="panel"><div class="h4">Standards, methods and other</div><div class="chips" style="margin-top:12px"><span class="chip">EASA CS-25 and certification</span><span class="chip">Transport Standard Specification (TSS)</span><span class="chip">ESDU lug design</span><span class="chip">Lean Six Sigma</span><span class="chip">Quality management</span><span class="chip">Basic Python</span><span class="chip">Simulink</span><span class="chip">Blender</span><span class="chip">English (fluent), Hindi, Urdu, German (basic)</span></div></div>
+    </div>
+    <div class="panel accent rv" style="margin-top:22px">
+      <div class="eyebrow">Further academic work</div>
+      <div class="h4">FEA Simulation of Hard Material Machining (Silicon Carbide)</div>
+      <div class="meta" style="margin-top:6px"><span>Vellore Institute of Technology</span><span>December 2023 to May 2024</span></div>
+      <p style="margin-top:10px">Simulated orthogonal cutting of silicon carbide in ABAQUS using the JH-2 and JHB material models, and validated the model against experimental data with an error margin below 10%.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow">Experience and education</div><h2 class="h2" data-split>Where the work comes from</h2></div>
+    <div class="two" style="margin-top:28px">
+      <div class="edu rv">
+        <div>
+          <div class="when">MARCH 2025 TO FEBRUARY 2026</div>
+          <div class="what">MSc Aerospace Vehicle Design, Cranfield University, UK</div>
+          <div class="where">Overall mark 76.85%. Key modules: FEA, Composite Structures Design, Detail Stressing, Damage Tolerance and Fatigue Fracture Mechanics, Structural Stability, Aeroelasticity, Design for Manufacture, Airframe Systems, Landing Gear Design, Aircraft Performance, Reliability Safety Assessment and Certification. Project Manager, Group Design Project: SA-25 Supersonic Airliner, led the structural design team through PDR and CDR, managing configuration control, BOM generation and technical documentation in 3DEXPERIENCE.</div>
+        </div>
+        <div>
+          <div class="when">SEPTEMBER 2022 TO NOVEMBER 2023</div>
+          <div class="what">Composites R&amp;D Lead, Pravega Racing, Formula Student Team, VIT</div>
+          <div class="where">Led composite and structural design across suspension, aerodynamic and bodywork systems, from concept through to manufacture and deployment.</div>
+        </div>
+        <div>
+          <div class="when">AUGUST 2021 TO AUGUST 2022</div>
+          <div class="what">Composites Engineer, Pravega Racing, Formula Student Team, VIT</div>
+          <div class="where">Performed FEA in ANSYS to validate component designs under operational load cases, applying systematic material selection across CFRP and GFRP systems, and increased manufacturing process efficiency by 10% through root cause identification and resolution of recurring production bottlenecks.</div>
+        </div>
+        <div>
+          <div class="when">SEPTEMBER 2020 TO MAY 2024</div>
+          <div class="what">BTech Mechanical Engineering (Automotive Specialisation), Vellore Institute of Technology, India</div>
+          <div class="where">CGPA 8.63/10, ranked Top 10. Key modules: Design for Machine Elements, Mechanics of Machines, Computational Fluid Dynamics, Automotive Aerodynamics, Automotive Electricals, Quality Management and Reliability.</div>
+        </div>
+      </div>
+      <div class="stack rv">
+        <div class="panel">
+          <div class="h4">Certifications</div>
+          <ul class="list" style="margin-top:12px">
+            <li>3DEXPERIENCE Mechanical Designer, Associate, Dassault Systèmes (91%)</li>
+            <li>3DEXPERIENCE Project Planner, Associate, Dassault Systèmes (81%)</li>
+            <li>Lean Six Sigma White Belt, Management and Strategy Institute</li>
+            <li>Six Sigma Yellow Belt Specialisation, Kennesaw State University (Coursera)</li>
+            <li>Project Management Essentials, Management and Strategy Institute</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <div class="h4">Outside work</div>
+          <ul class="list" style="margin-top:12px">
+            <li>Regular gym training, focused on building discipline and consistency over time rather than short term results</li>
+            <li>Single player narrative games with strong character development, including The Last of Us, God of War, Red Dead Redemption 2 and Horizon Zero Dawn</li>
+            <li>Time with a close group of friends who challenge and motivate each other rather than working in isolation</li>
+            <li>Travel and exploring new places, something I am actively working toward</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <div class="eyebrow" style="color: var(--accent)">Contact</div>
+      <h2 class="h2" data-split>Let us talk</h2>
+      <p class="lede" style="color: var(--on-navy-muted); margin-top:14px">Full thesis reports, the supporting design documents behind the images on this page, and role-specific CVs are available on request.</p>
+      <div style="margin-top:22px">
+        <a href="mailto:ateeb.hp@gmail.com"><small>Email</small>ateeb.hp@gmail.com</a>
+        <a href="tel:+447721160253"><small>Phone</small>+44 7721 160253</a>
+        <a href="https://linkedin.com/in/ateeb-rahman" target="_blank" rel="noopener"><small>LinkedIn</small>linkedin.com/in/ateeb-rahman</a>
+        <a href="#top" style="border-bottom:0"><small>Location</small>Milton Keynes, UK</a>
+      </div>
+    </div>
+    <figure class="rv"><img src="images/sa25_iso_render.jpg" alt="Isometric render of the SA-25 Phantom"><figcaption style="color: var(--on-navy-muted)">SA-25 Phantom</figcaption></figure>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Mohammed Ateeb ur Rahman, Engineering Portfolio</span><span>Milton Keynes, UK</span></div></footer>
+
+<button class="totop" aria-label="Back to top" title="Back to top">&uarr;</button>
+
+<div class="lb" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <span class="count"></span>
+  <button class="close" aria-label="Close">&times;</button>
+  <button class="prev" aria-label="Previous image">&lsaquo;</button>
+  <button class="next" aria-label="Next image">&rsaquo;</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add('js');
+  // "reduce" only switches off travel-based motion (parallax, inertia, slides).
+  // Opacity fades and the rolling line keep working either way.
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var travel = !reduce;
+  var finePointer = !window.matchMedia || window.matchMedia('(pointer: fine)').matches;
+
+  // =====================================================================
+  // 1. Split headings into masked words so they can rise into place
+  // =====================================================================
+  if (travel) {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-split]'), function (el) {
+      var text = el.textContent;
+      if (!text || el.children.length) { /* plain text only */ }
+      var words = text.split(/\s+/).filter(Boolean);
+      if (!words.length || words.length > 24) return;
+      el.textContent = '';
+      words.forEach(function (w, i) {
+        var span = document.createElement('span');
+        span.className = 'ln';
+        var inner = document.createElement('i');
+        inner.textContent = w;
+        inner.style.transitionDelay = Math.min(i * 45, 360) + 'ms';
+        span.appendChild(inner);
+        el.appendChild(span);
+        if (i < words.length - 1) el.appendChild(document.createTextNode(' '));
+      });
+    });
+  }
+
+  // =====================================================================
+  // 2. Reveal: ease in on approach, ease out on departure, both directions
+  // =====================================================================
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll('.rv, .rv-group'));
+  function sweep() {
+    var vh = window.innerHeight || 800;
+    for (var i = 0; i < revealEls.length; i++) {
+      var el = revealEls[i], r = el.getBoundingClientRect(), cl = el.classList;
+      if (r.top > vh * 0.88) { if (!cl.contains('below')) { cl.add('below'); cl.remove('above'); } }
+      else if (r.bottom < vh * 0.12) { if (!cl.contains('above')) { cl.add('above'); cl.remove('below'); } }
+      else if (cl.contains('below') || cl.contains('above')) { cl.remove('below'); cl.remove('above'); }
+    }
+  }
+  function revealAll() { revealEls.forEach(function (el) { el.classList.remove('below'); el.classList.remove('above'); }); }
+  window.addEventListener('beforeprint', revealAll);
+
+  // =====================================================================
+  // 3. Parallax on the big images
+  // =====================================================================
+  var parEls = Array.prototype.slice.call(document.querySelectorAll('[data-par]'));
+  function parallax() {
+    if (!travel) return;
+    var vh = window.innerHeight || 800;
+    for (var i = 0; i < parEls.length; i++) {
+      var el = parEls[i], r = el.getBoundingClientRect();
+      if (r.bottom < -300 || r.top > vh + 300) continue;
+      var speed = parseFloat(el.getAttribute('data-par')) || 0.12;
+      var centre = r.top + r.height / 2 - vh / 2;
+      el.style.transform = 'translate3d(0,' + (-centre * speed).toFixed(2) + 'px,0)';
+    }
+  }
+
+  // =====================================================================
+  // 4. Count-up on the numeric stat tiles
+  // =====================================================================
+  var counters = [];
+  Array.prototype.forEach.call(document.querySelectorAll('.tile b, .hero-stats b'), function (el) {
+    var m = /^(\D*?)([\d]+(?:\.\d+)?)(.*)$/.exec(el.textContent);
+    if (!m) return;
+    counters.push({ el: el, pre: m[1], to: parseFloat(m[2]), dec: (m[2].split('.')[1] || '').length, post: m[3], done: false });
+  });
+  function countUp(c) {
+    if (c.done) return;
+    c.done = true;
+    var t0 = performance.now(), dur = 900;
+    (function frame(now) {
+      var p = Math.min(1, (now - t0) / dur);
+      var v = c.to * (1 - Math.pow(1 - p, 3));
+      c.el.textContent = c.pre + v.toFixed(c.dec) + c.post;
+      if (p < 1) requestAnimationFrame(frame);
+    })(t0);
+  }
+  function checkCounters() {
+    var vh = window.innerHeight || 800;
+    for (var i = 0; i < counters.length; i++) {
+      var r = counters[i].el.getBoundingClientRect();
+      if (!counters[i].done && r.top < vh * 0.9 && r.bottom > 0) countUp(counters[i]);
+    }
+  }
+
+  // =====================================================================
+  // 5. Nav state, progress bar, back-to-top
+  // =====================================================================
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[data-nav]'));
+  var sections = links.map(function (a) { return document.getElementById(a.getAttribute('data-nav')); });
+  var progress = document.querySelector('.progress');
+  var totop = document.querySelector('.totop');
+  function update() {
+    var y = window.scrollY || window.pageYOffset;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (progress) progress.style.width = (max > 0 ? Math.min(100, y / max * 100) : 0) + '%';
+    if (totop) totop.classList.toggle('show', y > 700);
+    var current = null, offset = 120;
+    sections.forEach(function (sec) { if (sec && sec.getBoundingClientRect().top - offset <= 0) current = sec.id; });
+    if (max > 0 && y >= max - 4) current = sections[sections.length - 1].id;
+    links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('data-nav') === current); });
+    sweep(); parallax(); checkCounters();
+  }
+
+  // =====================================================================
+  // 6. Inertia scrolling. Wheel input is eased towards a target instead of
+  //    jumping, which is what gives a page its "flow". Touch, keyboard and
+  //    scrollbar dragging are left completely alone.
+  // =====================================================================
+  var smooth = travel && finePointer;
+  var targetY = window.scrollY || 0, raf = 0, selfScroll = false, gliding = false;
+  function maxY() { return Math.max(0, document.documentElement.scrollHeight - window.innerHeight); }
+  function loop() {
+    var y = window.scrollY || window.pageYOffset;
+    var d = targetY - y;
+    if (Math.abs(d) < 0.4) { selfScroll = true; window.scrollTo(0, targetY); selfScroll = false; raf = 0; update(); return; }
+    selfScroll = true;
+    window.scrollTo(0, y + d * 0.14);
+    selfScroll = false;
+    update();
+    raf = requestAnimationFrame(loop);
+  }
+  function kick() { if (!raf) raf = requestAnimationFrame(loop); }
+  window.addEventListener('wheel', function (ev) {
+    if (!smooth || gliding) return;
+    if (ev.ctrlKey || ev.metaKey) return;                       // zoom gesture
+    if (lb && lb.classList.contains('open')) return;             // lightbox has its own scroll
+    if (ev.target.closest && ev.target.closest('.strip')) return; // horizontal galleries scroll natively
+    if (Math.abs(ev.deltaX) > Math.abs(ev.deltaY)) return;        // sideways trackpad swipe
+    ev.preventDefault();
+    var step = ev.deltaMode === 1 ? ev.deltaY * 18 : (ev.deltaMode === 2 ? ev.deltaY * window.innerHeight : ev.deltaY);
+    targetY = Math.max(0, Math.min(maxY(), targetY + step));
+    kick();
+  }, { passive: false });
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (!selfScroll && !gliding && !raf) targetY = window.scrollY || window.pageYOffset;
+    if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; update(); }); }
+  }, { passive: true });
+  window.addEventListener('resize', function () { targetY = window.scrollY || window.pageYOffset; update(); });
+
+  // =====================================================================
+  // 7. Eased jump when a nav link is clicked
+  // =====================================================================
+  var glideId = 0;
+  function easeInOutCubic(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+  function glideTo(to) {
+    var endY = Math.max(0, Math.min(to, maxY()));
+    var startY = window.scrollY || window.pageYOffset;
+    var dist = endY - startY;
+    if (raf) { cancelAnimationFrame(raf); raf = 0; }
+    if (!travel || Math.abs(dist) < 2) { window.scrollTo(0, endY); targetY = endY; update(); return; }
+    var dur = Math.max(560, Math.min(1250, 340 + Math.abs(dist) * 0.34));
+    var t0 = performance.now(), id = ++glideId;
+    gliding = true;
+    (function step(now) {
+      if (id !== glideId) return;
+      var p = Math.min(1, (now - t0) / dur);
+      selfScroll = true;
+      window.scrollTo(0, startY + dist * easeInOutCubic(p));
+      selfScroll = false;
+      update();
+      if (p < 1) requestAnimationFrame(step);
+      else { gliding = false; targetY = endY; }
+    })(t0);
+  }
+  ['wheel', 'touchstart', 'keydown'].forEach(function (evt) {
+    window.addEventListener(evt, function () { if (gliding) { glideId++; gliding = false; targetY = window.scrollY || window.pageYOffset; } }, { passive: true });
+  });
+  if (totop) totop.addEventListener('click', function () { glideTo(0); });
+  document.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    var target = id ? document.getElementById(id) : null;
+    if (!target) return;
+    ev.preventDefault();
+    var bar = document.querySelector('.nav');
+    var offset = (bar ? bar.offsetHeight : 60) + 12;
+    glideTo(target.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - offset);
+    if (history.pushState) history.pushState(null, '', '#' + id);
+  });
+
+  // =====================================================================
+  // 9. Lightbox
+  // =====================================================================
+  var lb = document.querySelector('.lb');
+  var lbImg = lb.querySelector('img'), lbCap = lb.querySelector('figcaption'), lbCount = lb.querySelector('.count');
+  var group = [], idx = 0;
+  function figures(g) { return Array.prototype.slice.call(document.querySelectorAll('figure.zoom[data-group="' + g + '"]')); }
+  function show(i) {
+    idx = (i + group.length) % group.length;
+    var f = group[idx], im = f.querySelector('img'), cap = f.querySelector('figcaption');
+    lbImg.src = im.getAttribute('src'); lbImg.alt = im.alt;
+    lbCap.textContent = cap ? cap.textContent.replace(/^\d+\s*/, '') : '';
+    lbCount.textContent = (idx + 1) + ' / ' + group.length;
+    lb.querySelector('.prev').hidden = lb.querySelector('.next').hidden = group.length < 2;
+  }
+  function openLb(f) { group = figures(f.getAttribute('data-group')); show(group.indexOf(f)); lb.classList.add('open'); document.body.style.overflow = 'hidden'; lb.querySelector('.close').focus(); }
+  function closeLb() { lb.classList.remove('open'); document.body.style.overflow = ''; lbImg.src = ''; }
+  document.addEventListener('click', function (ev) {
+    var f = ev.target.closest && ev.target.closest('figure.zoom');
+    if (f && !lb.contains(f)) { openLb(f); return; }
+    if (ev.target === lb) closeLb();
+  });
+  lb.querySelector('.close').addEventListener('click', closeLb);
+  lb.querySelector('.prev').addEventListener('click', function () { show(idx - 1); });
+  lb.querySelector('.next').addEventListener('click', function () { show(idx + 1); });
+  document.addEventListener('keydown', function (ev) {
+    if (!lb.classList.contains('open')) return;
+    if (ev.key === 'Escape') closeLb();
+    if (ev.key === 'ArrowLeft') show(idx - 1);
+    if (ev.key === 'ArrowRight') show(idx + 1);
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('figure.zoom'), function (f) {
+    f.setAttribute('tabindex', '0'); f.setAttribute('role', 'button'); f.setAttribute('aria-label', 'Enlarge image');
+    f.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); openLb(f); } });
+  });
+
+  // ---- go ----
+  update();
+  window.addEventListener('load', function () { targetY = window.scrollY || window.pageYOffset; update(); });
+})();
+</script>
+</body>
+</html>
